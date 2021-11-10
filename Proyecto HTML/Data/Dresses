@@ -83,7 +83,7 @@ spans.forEach((span, idx) => {
            <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                   <div class="card h-100">
-                    <img src="./Images/Dress1.webp" class="card-img-top" alt"Hermoso vestido de cuadros">
+                    <img src="./Images/dress1.webp" class="card-img-top" alt"Hermoso vestido de cuadros">
                     <div class="card-body">
                       <h5 class="card-title">Vestido de Cuadros Blanco y Negro</h5>
                       <p class="card-text">24.99€</p>
@@ -92,7 +92,7 @@ spans.forEach((span, idx) => {
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="./Images/Dress2.webp" class="card-img-top" alt="Vestido con Cierre">
+                    <img src="./Images/dress2.webp" class="card-img-top" alt="Vestido con Cierre">
                     <div class="card-body">
                       <h5 class="card-title">Vestido con cierre</h5>
                       <p class="card-text">9.99€</p>
@@ -101,7 +101,7 @@ spans.forEach((span, idx) => {
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="./Images/Dress3" class="card-img-top" alt="Vestido negro largo escotado">
+                    <img src="./Images/dress3.webp" class="card-img-top" alt="Vestido negro largo escotado">
                     <div class="card-body">
                       <h5 class="card-title">Vestido Negro Largo Escotado</h5>
                       <p class="card-text">49.99€</p>
