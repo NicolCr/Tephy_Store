@@ -12,17 +12,9 @@ body {
   height: 100vh;
   margin: 0;
   font: 500 100% system-ui, sans-serif;
-  text-transform: uppercase;
 
 }
 
-img {
-  opacity: 0.5;
-}
-
-img:hover {
-  opacity: 1.0;
-}
 
 .page-wrap {
   background: transparent;
@@ -365,10 +357,19 @@ h1, p {
   font-weight: 280;
 }
 p {
-  font-size: 30px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
 }
 
-
+.col{
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center; 
+}
 
 
 h1 {
