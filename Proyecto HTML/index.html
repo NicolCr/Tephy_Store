@@ -8,9 +8,8 @@
     <link rel="canonical" href="https:\\www.tephystore.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>
-        Homepage.of-the-Best-Store | Tehpy-Store
-    </title>
+    <title> Homepage of the Best Store | Tehpy-Store</title>
+
     <link rel="stylesheet" type="text/css" href="./Styles/css.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -21,6 +20,8 @@
 
 
 <body>
+    
+    <!-- Animación del título de la página -->
     <div class="page-wrap">
         <header class="page-header">
             <h1>
@@ -31,29 +32,33 @@
                     <span>H</span>
                     <span>Y</span>
                 </div>
-                </h1>
+             </h1>
+
 
 <script>
 
-const spans = document.querySelectorAll('.word span');
+    const spans = document.querySelectorAll('.word span');
 
-spans.forEach((span, idx) => {
-  span.addEventListener('click', (e) => {
+    spans.forEach((span, idx) => {
+    span.addEventListener('click', (e) => {
     e.target.classList.add('active');
-  });
-  span.addEventListener('animationend', (e) => {
+    });
+    span.addEventListener('animationend', (e) => {
     e.target.classList.remove('active');
-  });
+    });
   
-  setTimeout(() => {
+    setTimeout(() => {
     span.classList.add('active');
-  }, 750 * (idx+1))
-});
+    }, 750 * (idx+1))
+    });
 </script>
-
-                
+            
 
         </header>
+
+
+            <!-- Área de navegación con listado horizontal -->
+
         <nav class="page-nav">
             <ul id="navegación">
                 <li>
@@ -73,12 +78,14 @@ spans.forEach((span, idx) => {
                 </li>
             </ul>
 
-            <img src="./Images/Bluebar.png" height="20%" width="60%" />
-
-
-
+               <img src="./Images/Bluebar.png" height="20%" width="60%" />
         </nav>
+
+
+    <!-- Contenido de la página  -->
+
         <main class="page-main">
+
             <img src="./Images/Tephy Promociones.jpg" alt="Mejores precios de la semana" height="30%" width="30%" /><br>
             <A HREF="./Data/sale.html">Sale </A><br>
             <img src="./Images/Tephy New Collection.jpg" alt="La nueva colección de la temporada" height="30%" width="30%" /><br>
@@ -86,26 +93,10 @@ spans.forEach((span, idx) => {
             <img src="./Images/Tephy Outlet.jpg" alt="Tiramos la tienda por la ventana con estos precios" height="30%" width="30%" /><br>
             <A HREF="./Data/outlet.html">Outlet </A><br>
         
-        <div class="container">
-    <div class="bird-container bird-container--one">
-        <div class="bird bird--one"></div>
-    </div>
-
-    <div class="bird-container bird-container--two">
-        <div class="bird bird--two"></div>
-    </div>
-
-    <div class="bird-container bird-container--three">
-        <div class="bird bird--three"></div>
-    </div>
-
-    <div class="bird-container bird-container--four">
-        <div class="bird bird--four"></div>
-    </div>
-</div>
-
-
         </main>
+
+
+            <!-- Parte lateral con menu retráctil -->
 
         <aside class="page-sidebar">
             
@@ -114,32 +105,35 @@ spans.forEach((span, idx) => {
                 <label data-function="swipe" for="swipe">&#xf057;</label>
                 <label data-function="swipe" for="swipe">&#xf0c9;</label>
  
-  <div class="sidebar">
-    <nav class="menu">
-      <li><a href="#">Clothing</a></li>
-      <li><a href="#">Shoes</a></li>
-      <li><a href="#">Sign In</a></li>
-      <li><a href="#">Create Account</a></li>
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Contact</a></li>
-    </nav>
-  </div>
-  
-</div>
-        <hr>
+                <div class="sidebar">
+                    <nav class="menu">
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Create Account</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </nav>
+                </div>
+            </div>
+            <hr>
         </aside>
+
+
+            <!-- Footer con movimiento por hoover -->
+
         <footer class="page-footer">
             <div class="flexing">
                 <div class="section section--white">
-                  <h3 class="title">Follow</h3>
+                    <h3 class="title">Follow</h3>
                 </div>
                 <div class="section section--pink">
-                  <h3 class="title">Gift Cards</h3>
+                    <h3 class="title">Gift Cards</h3>
                 </div>
                 <div class="section section--blue">
-                  <h3 class="title">Social Media</h3>
+                    <h3 class="title">Social Media</h3>
                 </div>
-              </div>
+            </div>
               
         </footer>
     </div>

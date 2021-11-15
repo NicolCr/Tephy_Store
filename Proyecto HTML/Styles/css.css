@@ -2,19 +2,20 @@
   box-sizing: border-box;
 }
 
+/* Definición de la letra predeterminada de la página*/
 body {
   font-family:  "Cursive", "Calibri Light", "Century Gothic";
   color: deeppink;
   background-color: #FFFFFF;
   background-image: url(../Images/Fondo.jpg);
-  background-repeat:  round
+  background-repeat: round;
   padding: 5px;
   height: 100vh;
   margin: 0;
   font: 500 100% system-ui, sans-serif;
-
 }
 
+/* Poniendo boxes para cada elemento con GRID */
 
 .page-wrap {
   background: transparent;
@@ -41,6 +42,7 @@ body {
   }
 }
 
+/* Definiendo las partes de la página*/
 .page-header {
   grid-column: 1/-1;
   background: transparent;
@@ -63,6 +65,9 @@ body {
   grid-column: 1/-1;
 }
 
+
+
+/* Animación del Título de la Página*/
 
 @import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
 
@@ -172,6 +177,8 @@ body {
   }
 }
 
+
+/* Definiendo las características del formato de la barra de navegación*/
 #navegación {
     font-family:Century Gothic;
     font-weight:bold;
@@ -198,67 +205,10 @@ body {
 }
 
 .uppercase {
-  text-transform: uppercase;
-}
-
-.flexing {
-  display: flex;
-  flex-direction: column;
-  height: 25vh;
-}
-@media screen and (min-width: 1000px) {
-  .flexing {
-    flex-direction: row;
-  }
-}
-
-.section {
-  flex: 1;
-  position: relative;
-  transition: 0.5s ease;
-}
-.section--white {
-  background-color: #FFFFFF;
-  opacity: 0.7;
-}
-.section--pink {
-  background-color: #e40066;
-  opacity: 0.7;
-}
-.section--blue {
-  background-color: #4770b8;
-  opacity: 0.7;
-}
-.section:hover, .section:active, .section:focus {
-  flex: 3;
-}
-.section:hover .title, .section:active .title, .section:focus .title {
-  transform: translate(-50%, -50%) rotate(0);
-}
-@media screen and (min-width: 1000px) {
-  .section:hover .title, .section:active .title, .section:focus .title {
-    transform: translate(-50%, -50%) scale(1.25);
-  }
-}
-.section .title {
-  font-family: "Fredoka One";
-  font-size: 2rem;
-  left: 50%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease;
-}
-@media screen and (min-width: 1000px) {
-  .section .title {
-    transform: translate(-50%, -50%) rotate(90deg);
-  }
-}
+  text-transform: uppercase;}
 
 
-
-<----------------------------->
+  /* Menu lateral retráctil*/
 
 body {
   font: 12px 'Open Sans', sans-serif;
@@ -372,6 +322,67 @@ p {
 }
 
 
+/* Definiendo el Footer con animación*/
+.flexing {
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+}
+@media screen and (min-width: 1000px) {
+  .flexing {
+    flex-direction: row;
+  }
+}
+
+.section {
+  flex: 1;
+  position: relative;
+  transition: 0.5s ease;
+}
+.section--white {
+  background-color: #FFFFFF;
+  opacity: 0.7;
+}
+.section--pink {
+  background-color: #e40066;
+  opacity: 0.7;
+}
+.section--blue {
+  background-color: #4770b8;
+  opacity: 0.7;
+}
+.section:hover, .section:active, .section:focus {
+  flex: 3;
+}
+.section:hover .title, .section:active .title, .section:focus .title {
+  transform: translate(-50%, -50%) rotate(0);
+}
+@media screen and (min-width: 1000px) {
+  .section:hover .title, .section:active .title, .section:focus .title {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+}
+.section .title {
+  font-family: "Fredoka One";
+  font-size: 2rem;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+@media screen and (min-width: 1000px) {
+  .section .title {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+
+
+
+/* Definiendo los distintos formatos de los headings */
+
 h1 {
     text-align:center;
     font-family: "Cursive", "Calibri Light", "Century Gothic";
@@ -395,7 +406,7 @@ h3{
 
     text-align:center;
     font-family: "Cursive", "Calibri Light", "Century Gothic";
-    font color:  deeppink;
+    color:  deeppink;
     font-size: 15px;
     width: 200px;
     background-color: transparent;
@@ -440,6 +451,8 @@ h6{
    padding : 10px;
 }
 
+
+/* Formato personalizado de los links*/
 a:link {
   color: deeppink; }
 a:visited {
