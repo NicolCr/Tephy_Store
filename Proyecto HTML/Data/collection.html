@@ -16,8 +16,39 @@
 <body>
     <div class="page-wrap">
         <header class="page-header">
-            <h1> <A HREF="../Index.html">TEPHY </A><br>
-                <p> JULIA IS COMING </p></h1>
+            
+            <div class="page-wrap">
+                <header class="page-header">
+                    <h1>
+                        <div class="word">
+                            <span>T</span>
+                            <span>E</span>
+                            <span>P</span>
+                            <span>H</span>
+                            <span>Y</span>
+                        </div>
+                     </h1>
+        
+        
+        <script>
+        
+            const spans = document.querySelectorAll('.word span');
+        
+            spans.forEach((span, idx) => {
+            span.addEventListener('click', (e) => {
+            e.target.classList.add('active');
+            });
+            span.addEventListener('animationend', (e) => {
+            e.target.classList.remove('active');
+            });
+          
+            setTimeout(() => {
+            span.classList.add('active');
+            }, 750 * (idx+1))
+            });
+        </script>
+
+                <h4> JULIA IS COMING </h4>
         </header>
         <nav class="page-nav">
             <ul id="navegación">
@@ -47,13 +78,13 @@
                     <span class="separador">| </span><h2> <a href="../Data/Dresses.html"> Dresses</a></h2>
                 </li>
                 <li>
-                    <span class="separador">| </span><h2>Pants & Jeans</h2>
+                    <span class="separador">| </span><h2><a href="../Data/Pants_&_Jeans.html"> Pants & Jeans</a></h2>
                 </li>
                 <li>
-                    <span class="separador">| </span><h2>Shoes</h2>
+                    <span class="separador">| </span><h2><a href="../Data/Shoes.html"> Shoes</a></h2>
                 </li>
                 <li>
-                    <span class="separador">| </span><h2> T-shirts and Tops</h2>
+                    <span class="separador">| </span><h2><a href="../Data/T-Shirts_&_Tops.html"> T-shirts and Tops</a></h2>
 
                 </li>
             </ul>

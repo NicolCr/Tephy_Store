@@ -15,8 +15,36 @@
 <body>
     <div class="page-wrap">
         <header class="page-header">
-            <h1> <A HREF="../Index.html">TEPHY </A><br>
-                <p> Mi Carrito </p></h1>
+            <div class="page-wrap">
+                <header class="page-header">
+                    <h1>
+                        <div class="word">
+                            <span>T</span>
+                            <span>E</span>
+                            <span>P</span>
+                            <span>H</span>
+                            <span>Y</span>
+                        </div>
+                        </h1>
+        
+        <script>
+        
+        const spans = document.querySelectorAll('.word span');
+        
+        spans.forEach((span, idx) => {
+          span.addEventListener('click', (e) => {
+            e.target.classList.add('active');
+          });
+          span.addEventListener('animationend', (e) => {
+            e.target.classList.remove('active');
+          });
+          
+          setTimeout(() => {
+            span.classList.add('active');
+          }, 750 * (idx+1))
+        });
+        </script>
+                <h4> Mi Carrito </h4>
         </header>
         <nav class="page-nav">
             <ul id="navegación">
