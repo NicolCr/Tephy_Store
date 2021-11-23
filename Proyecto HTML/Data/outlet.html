@@ -16,8 +16,37 @@
 <body>
     <div class="page-wrap">
         <header class="page-header">
-            <h1> <A HREF="../Index.html">TEPHY </A><br>
-                <p> OUTLET </p></h1>
+            <div class="page-wrap">
+                <header class="page-header">
+                    <h1>
+                        <div class="word">
+                            <span>T</span>
+                            <span>E</span>
+                            <span>P</span>
+                            <span>H</span>
+                            <span>Y</span>
+                        </div>
+                     </h1>
+        
+        
+        <script>
+        
+            const spans = document.querySelectorAll('.word span');
+        
+            spans.forEach((span, idx) => {
+            span.addEventListener('click', (e) => {
+            e.target.classList.add('active');
+            });
+            span.addEventListener('animationend', (e) => {
+            e.target.classList.remove('active');
+            });
+          
+            setTimeout(() => {
+            span.classList.add('active');
+            }, 750 * (idx+1))
+            });
+        </script>
+                <h4> OUTLET </h4>
         </header>
         <nav class="page-nav">
             <ul id="navegación">
@@ -43,7 +72,9 @@
            
             
 
-             <h2>Dresses &emsp; &emsp; &emsp; &emsp; Pants & Jeans &emsp; &emsp; &emsp; &emsp; Shoes &emsp; &emsp; &emsp; &emsp; T-shirts and Tops &emsp; &emsp; &emsp; &emsp;<br><br> Shirts &emsp; &emsp; &emsp; &emsp; Bikinis<br><br></h2>
+             <h2><a href="../Data/Dresses.html">Dresses</a> &emsp; &emsp; &emsp; &emsp;<a href="../Data/Pants_&_Jeans.html">Pants & Jeans</a> 
+            &emsp; &emsp; &emsp; &emsp;<a href="../Data/Shoes.html">Shoes</a> &emsp; &emsp; &emsp; &emsp;<a href="../Data/T-Shirts_&_Tops.html">T-shirts and Tops </a> &emsp; &emsp; &emsp; &emsp;<br><br> 
+            <a href="../Data/Shirts.html">Shirts</a> &emsp; &emsp; &emsp; &emsp;<a href="../Data/Bikinis.html">Bikinis</a><br><br></h2>
 
         </main>
 

@@ -13,6 +13,7 @@ body {
   height: 100vh;
   margin: 0;
   font: 500 100% system-ui, sans-serif;
+  font-size: large
 }
 
 /* Poniendo boxes para cada elemento con GRID */
@@ -211,9 +212,7 @@ body {
   /* Menu lateral retráctil*/
 
 body {
-  font: 12px 'Open Sans', sans-serif;
   color: #212121;
-  background: #eeeeee;
   overflow-x: hidden;
 }
 .container {
